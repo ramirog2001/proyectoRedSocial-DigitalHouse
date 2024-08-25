@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Matemasie&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="appName">Red Social</h1>
+        <hr>
+        <h2>Qué estás pensando?</h2>
+        <form id="postForm" onsubmit="event.preventDefault(); postData()">
+            <label for="postTitle">Titulo:</label>
+            <input type="text" id="postTitle" required autocomplete="off">
+            <label for="postBody">Contenido:</label>
+            <textarea type="text" id="postBody" required autocomplete="off"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+        <ul id="postList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

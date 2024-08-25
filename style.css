@@ -1,0 +1,146 @@
+body{
+    background-color: #32CD32;
+    margin: 20px auto;
+    text-align: center;
+}
+.container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px #006400;
+    margin: 0px auto;
+    max-width: 70%;
+    padding: 10px 10px;
+}
+body, input, textarea, button{
+    font-family: "IBM Plex Mono", monospace;
+}
+
+#appName{
+    color: #228B22;
+    font-family: "Matemasie", sans-serif;
+}
+
+button{
+    background-color: #32CD32;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 5px auto;
+    padding: 8px 12px;
+    transition: .3s ease;
+}
+
+button:hover{
+    background-color: #006400;
+}
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    background-color: #99F299;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    width: 70%;
+}
+
+textarea{
+    resize: none;
+    scrollbar-width: none;
+}
+
+#postList{
+    padding: 0px;
+}
+
+.postItem{
+    list-style-type: none;
+    margin: 20px auto;
+    background-color: rgba(211, 211, 211, 0.185);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(211, 211, 211);
+    max-width: 90%;
+}
+
+.postItem > button{
+    width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.deleteButton{
+    background-color: #FF4500;
+}
+
+.editButton{
+    background-color: #1E90FF;
+}
+.deleteButton:hover{
+    background-color: #CC3700;
+}
+
+.editButton:hover{
+    background-color: #1C7ED6;
+}
+
+hr{
+    max-width: 60%;
+    margin: 30px auto;
+}
+
+.editForm{
+    display: none;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 1250px) {
+    .postItem{
+        max-width: 40%;
+        display: inline-block;
+        margin: 20px 0px;
+        text-align: left;
+        position: relative;
+    }
+
+    
+    #postList{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 2000px) {
+    .postItem{
+        max-width: 28%;
+        display: inline-block;
+        margin: 20px 0px;
+        text-align: left;
+        position: relative;
+    }
+
+    
+    #postList{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
